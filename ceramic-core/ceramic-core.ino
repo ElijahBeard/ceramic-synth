@@ -1,5 +1,5 @@
 /*
- * ceramic-core.ino -  
+ * ceramic-core.ino -  core functionality for ceramic synth.
  * Elijah Beard (2026)
  */
 #include <MozziGuts.h>
