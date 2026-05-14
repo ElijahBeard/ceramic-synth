@@ -3,7 +3,6 @@
 set -e
 
 BOARD="arduino:avr:uno"
-PORT="/dev/cu.usbmodem1101"
 SKETCH="ceramic-core"
 
 if ! command -v arduino-cli &> /dev/null; then
@@ -13,9 +12,12 @@ if ! command -v arduino-cli &> /dev/null; then
     echo "https://arduino.github.io/arduino-cli/latest/installation/"
     exit 1
 fi
-
+arduino-cli board list
 echo
 read -p "Burn bootloader first? (y/n): " BURN
+
+read -p "Enter serial port [/dev/cu.usbmodem1101]: " PORT
+PORT=${PORT:-/dev/cu.usbmodem1101}
 
 if [[ "$BURN" =~ ^[Yy]$ ]]; then
     echo "Burning bootloader..."

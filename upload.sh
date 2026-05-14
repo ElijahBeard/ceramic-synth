@@ -3,9 +3,9 @@
 set -e
 
 BOARD="arduino:avr:uno"
-PORT="/dev/cu.usbmodem1101"
 SKETCH="ceramic-core"
 
+arduino-cli board list
 read -p "Enter serial port [/dev/cu.usbmodem1101]: " PORT
 PORT=${PORT:-/dev/cu.usbmodem1101}
 
