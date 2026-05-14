@@ -3,9 +3,6 @@ Multidisciplinary electronic audio generation project created by Julia Weber and
 
 ## Form
 The original clay form before firing included an amplifier and audio input circuit which was meant to include piezoelectric components as microphones for interactive audio feedback. These prototype forms shown below have been split into a second bread-board style form and an MCU unit form.
-<div align="center">
-<img width="450" alt="Screenshot 2026-05-14 at 10 09 47 AM" src="https://github.com/ElijahBeard/ceramic-synth/blob/main/media/IMG_2077-compressed.jpg?raw=true" />
-</div>
 
 ## Hardware
 The project is based on an ATMEGA328P-PU (DIP 28). . This MCU was chosen for it's low power operation, mozzi compatability and large DIP package size. Using SMD components on this project was not possible due to the shrinkage of clay not allowing for the level of precision required for `> 1mm` width pads.
