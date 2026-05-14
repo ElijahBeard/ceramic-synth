@@ -1,5 +1,5 @@
 # Ceramic Synth
-Multidisciplinary electronic audio generation project created by Julia Weber and Elijah Beard. This project combines the arts of ceramics and electronics. By using the ceramic material as a natural insulator for electronic traces, ceramic synth operates as a simple circuit board that runs a stripped down MCU.
+Ceramic synth is a multidisciplinary art project created by Julia Weber and Elijah Beard. This project combines the arts of ceramics and electronics. By using the ceramic material as a natural insulator for electronic traces, ceramic synth operates as a simple circuit board that runs a stripped down MCU.
 
 To deploy this system on your own embedded system, run `setup.sh` to burn the arduino bootloader to your MCU and install the mozzi library. Then, run `upload.sh` to compile and upload the ceramic-core to the MCU. Check the [Mozzi Official Site](https://sensorium.github.io/Mozzi/#supported-boards-output-modes-and-default-pins) for compatibility and audio output modes on several different chipsets.
 
